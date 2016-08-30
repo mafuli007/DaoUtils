@@ -1,0 +1,15 @@
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\Process\clientInterface\IServiceConnect.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\DaoUtils\Utils\HibernateUtil.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\models\FileObj.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\models\TASKTYPE.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\models\FtpServerAddress.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\models\TcpServerObj.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\models\Configuration.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\DaoUtils\Utils\Utils.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\models\Task.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\DaoUtils\storeDataService\StoreDataService.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\DaoUtils\Utils\LogUtils.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\Process\mqClient\RabbitMqProcessClient.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\Process\mqClient\MqConnector.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\Process\clientInterface\ProcessClient.java
+H:\WorkSpace\BrazilCenter\DaoUtils\src\main\java\BrazilCenter\DaoUtils\dao\Storager.java

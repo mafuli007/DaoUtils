@@ -1,0 +1,15 @@
+BrazilCenter\models\FtpServerAddress.class
+BrazilCenter\DaoUtils\storeDataService\StoreDataService.class
+BrazilCenter\models\TASKTYPE.class
+BrazilCenter\DaoUtils\Utils\Utils.class
+BrazilCenter\DaoUtils\Utils\LogUtils.class
+BrazilCenter\models\Configuration.class
+BrazilCenter\Process\clientInterface\IServiceConnect.class
+BrazilCenter\Process\mqClient\MqConnector.class
+BrazilCenter\DaoUtils\dao\Storager.class
+BrazilCenter\DaoUtils\Utils\HibernateUtil.class
+BrazilCenter\models\Task.class
+BrazilCenter\models\FileObj.class
+BrazilCenter\Process\mqClient\RabbitMqProcessClient.class
+BrazilCenter\models\TcpServerObj.class
+BrazilCenter\Process\clientInterface\ProcessClient.class
