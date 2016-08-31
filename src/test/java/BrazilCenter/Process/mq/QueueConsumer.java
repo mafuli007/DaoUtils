@@ -12,7 +12,7 @@ import com.rabbitmq.client.Consumer;
 import com.rabbitmq.client.Envelope;
 import com.rabbitmq.client.ShutdownSignalException;
 
-import BrazilCenter.Process.mqClient.MqConnector;
+import BrazilCenter.Process.MqInterface.MqConnector;
 import BrazilCenter.models.Task;
  
  

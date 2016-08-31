@@ -1,6 +1,5 @@
-package BrazilCenter.Process.clientInterface;
+package BrazilCenter.Process.ClientInterface;
 
-import BrazilCenter.models.Configuration;
 import BrazilCenter.models.Task;
 
 /**
@@ -11,7 +10,5 @@ import BrazilCenter.models.Task;
 public interface IServiceConnect {
 
 	public boolean sendTaskToSever(Task task);
-
-	public void setConfiguration(Configuration conf);
 	
 }

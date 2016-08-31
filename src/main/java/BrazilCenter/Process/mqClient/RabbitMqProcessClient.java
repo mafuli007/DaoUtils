@@ -2,17 +2,29 @@ package BrazilCenter.Process.mqClient;
 
 import java.io.File;
 import java.io.IOException;
+
+import BrazilCenter.DaoUtils.Utils.LogUtils;
+import BrazilCenter.Process.ClientInterface.IServiceConnect;
+import BrazilCenter.Process.MqInterface.MqConnector;
+import BrazilCenter.models.Configuration;
 import BrazilCenter.models.Task;
 
-public class RabbitMqProcessClient extends MqConnector{
+public class RabbitMqProcessClient extends MqConnector implements IServiceConnect{
 	
-	public RabbitMqProcessClient(String endpointName) throws IOException {
+	private Configuration conf;
+	
+	public Configuration getConf() {
+		return conf;
+	}
+
+	public RabbitMqProcessClient(String endpointName, Configuration confr) throws IOException {
 		super(endpointName);
+		this.conf = confr;
 		// TODO Auto-generated constructor stub
 	}
 	
 	/**
-	 * 关闭channel和connection。并非必须，因为隐含是自动调用的。
+	 * Close channel and connection. Not necessary as it happens implicitly any way.
 	 * @throws IOException
 	 */
 	public void close() throws IOException {
@@ -26,9 +38,11 @@ public class RabbitMqProcessClient extends MqConnector{
 	
 		 try {
 			channel.basicPublish("",endPointName, null, fileName.getBytes());
+			LogUtils.logger.info("Send : " + fileName + " to MqServer.");
+			return true;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LogUtils.logger.error("Failed to send message to MQ: " + fileName);
 		}
 		return false;
 	}

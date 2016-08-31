@@ -1,12 +1,10 @@
-package BrazilCenter.Process.mqClient;
+package BrazilCenter.Process.MqInterface;
 
 import java.io.IOException;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-
-import BrazilCenter.Process.clientInterface.ProcessClient;
 
 /**
  * public class used to connect to rabbitmq service. for both
@@ -15,7 +13,7 @@ import BrazilCenter.Process.clientInterface.ProcessClient;
  * @author Fuli Ma
  *
  */
-public abstract class MqConnector extends ProcessClient {
+public abstract class MqConnector{
 
 	protected Channel channel;
 	protected Connection connection;

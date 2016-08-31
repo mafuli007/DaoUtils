@@ -12,4 +12,3 @@ BrazilCenter\models\Task.class
 BrazilCenter\models\FileObj.class
 BrazilCenter\Process\mqClient\RabbitMqProcessClient.class
 BrazilCenter\models\TcpServerObj.class
-BrazilCenter\Process\clientInterface\ProcessClient.class

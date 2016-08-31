@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import BrazilCenter.Process.mqClient.RabbitMqProcessClient;
+import BrazilCenter.models.Configuration;
 import BrazilCenter.models.Task;
 import junit.framework.TestCase;
 
@@ -22,7 +23,8 @@ public class QueueConsumerTest   {
 
 		RabbitMqProcessClient producer = null;
 		try {
-			producer = new RabbitMqProcessClient("FirstQueue");
+			Configuration conf = new Configuration();
+			producer = new RabbitMqProcessClient("FirstQueue", conf);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
