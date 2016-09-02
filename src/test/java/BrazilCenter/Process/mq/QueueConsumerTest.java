@@ -11,17 +11,17 @@ import junit.framework.TestCase;
 public class QueueConsumerTest   {
 
 	public static void main(String[] args){
-/*		QueueConsumer consumer = null;
+		QueueConsumer consumer = null;
 		try {
-			consumer = new QueueConsumer("FirstQueue");
+			consumer = new QueueConsumer("BrazilStoreQueue");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		Thread consumerThread = new Thread(consumer);
-		consumerThread.start();*/
+		consumerThread.start();
 
-		RabbitMqProcessClient producer = null;
+		/*RabbitMqProcessClient producer = null;
 		try {
 			Configuration conf = new Configuration();
 			producer = new RabbitMqProcessClient("FirstQueue", conf);
@@ -36,6 +36,6 @@ public class QueueConsumerTest   {
 			task.setFilename(message);
 			producer.sendTaskToSever(task);
 			System.out.println("Message Number " + i + " sent.");
-		}
+		}*/
 	}
 }

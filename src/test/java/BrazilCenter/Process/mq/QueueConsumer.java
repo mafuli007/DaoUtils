@@ -1,11 +1,6 @@
 package BrazilCenter.Process.mq;
 
 import java.io.IOException;
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
- 
-import org.apache.commons.lang.SerializationUtils;
  
 import com.rabbitmq.client.AMQP.BasicProperties;
 import com.rabbitmq.client.Consumer;
@@ -50,7 +45,6 @@ public class QueueConsumer extends MqConnector implements Runnable, Consumer{
             BasicProperties props, byte[] body) throws IOException {
     	String msg = new String(body, "UTF-8");
     	System.out.println("Message :"+ msg + " received.");
-         
     }
  
     public void handleCancel(String consumerTag) {}

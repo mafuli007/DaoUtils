@@ -4,10 +4,10 @@ BrazilCenter\models\TASKTYPE.class
 BrazilCenter\DaoUtils\Utils\Utils.class
 BrazilCenter\DaoUtils\Utils\LogUtils.class
 BrazilCenter\models\Configuration.class
-BrazilCenter\Process\clientInterface\IServiceConnect.class
-BrazilCenter\Process\mqClient\MqConnector.class
 BrazilCenter\DaoUtils\dao\Storager.class
 BrazilCenter\DaoUtils\Utils\HibernateUtil.class
+BrazilCenter\Process\MqInterface\MqConnector.class
+BrazilCenter\Process\ClientInterface\IServiceConnect.class
 BrazilCenter\models\Task.class
 BrazilCenter\models\FileObj.class
 BrazilCenter\Process\mqClient\RabbitMqProcessClient.class

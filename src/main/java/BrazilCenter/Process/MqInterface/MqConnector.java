@@ -30,6 +30,7 @@ public abstract class MqConnector{
 		
 		factory.setUsername("admin");
 		factory.setPassword("admin");
+		factory.setAutomaticRecoveryEnabled(true);
 
 		// getting a connection
 		connection = factory.newConnection();
@@ -39,7 +40,7 @@ public abstract class MqConnector{
 
 		// declaring a queue for this channel. If queue does not exist,
 		// it will be created on the server.
-		channel.queueDeclare(endpointName, false, false, false, null);
+		channel.queueDeclare(endpointName, true, false, false, null);
 	}
 
 	/**

@@ -18,6 +18,16 @@ import BrazilCenter.models.FileObj;
  */
 public class Storager {
 
+	private String rootDir;
+	
+	public String getRootDir() {
+		return rootDir;
+	}
+
+	public void setRootDir(String rootDir) {
+		this.rootDir = rootDir;
+	}
+
 	private void createTable(String tableName) {
 		String createTableSql = "CREATE TABLE `" + tableName + "`  (`filename` varchar(255) NOT NULL,"
 				+ "`filepath` varchar(256) NOT NULL," + "`filesize` int(11) DEFAULT NULL,"

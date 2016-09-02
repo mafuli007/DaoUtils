@@ -34,6 +34,11 @@ public class Configuration {
 		this.addresslist = new LinkedList<FtpServerAddress>();
 		this.transferSwitch = "yes";
 		this.reUploadServers = new LinkedList<TcpServerObj>();
+		
+		/** default value. */
+		this.heartbeatInterval = 5;
+		this.errRecordScanInterval = 300;
+		
 	}
 
 	public String getTransferSwitch() {

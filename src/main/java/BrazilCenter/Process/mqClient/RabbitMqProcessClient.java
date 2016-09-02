@@ -3,6 +3,8 @@ package BrazilCenter.Process.mqClient;
 import java.io.File;
 import java.io.IOException;
 
+import com.rabbitmq.client.MessageProperties;
+
 import BrazilCenter.DaoUtils.Utils.LogUtils;
 import BrazilCenter.Process.ClientInterface.IServiceConnect;
 import BrazilCenter.Process.MqInterface.MqConnector;
@@ -37,10 +39,10 @@ public class RabbitMqProcessClient extends MqConnector implements IServiceConnec
 		String fileName =  task.getFilepath() + File.separator + task.getFilename();
 	
 		 try {
-			channel.basicPublish("",endPointName, null, fileName.getBytes());
+			channel.basicPublish("",endPointName, MessageProperties.PERSISTENT_TEXT_PLAIN, fileName.getBytes());
 			LogUtils.logger.info("Send : " + fileName + " to MqServer.");
 			return true;
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			LogUtils.logger.error("Failed to send message to MQ: " + fileName);
 		}
