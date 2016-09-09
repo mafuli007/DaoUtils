@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>BrazilCenter</groupId>
-	<artifactId>DaoUtils</artifactId>
+	<artifactId>BrazilCenterUtils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -47,46 +47,16 @@
 					</archive>
 				</configuration>
 			</plugin>
-<!-- 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<appendAssemblyId>false</appendAssemblyId>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>assembly</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin> -->
-			<!-- <plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-						<configuration>
-							<tasks>
-								<copy todir="H://WorkSpace//dist">
-									<fileset dir="${project.build.directory}">
-										<include name="*.jar"></include>
-									</fileset>
-								</copy>
-							</tasks>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-assembly-plugin</artifactId> 
+				<version>2.3</version> <configuration> <appendAssemblyId>false</appendAssemblyId> 
+				<descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> </descriptorRefs> 
+				</configuration> <executions> <execution> <id>make-assembly</id> <phase>package</phase> 
+				<goals> <goal>assembly</goal> </goals> </execution> </executions> </plugin> -->
+			<!-- <plugin> <artifactId>maven-antrun-plugin</artifactId> <executions> 
+				<execution> <phase>package</phase> <goals> <goal>run</goal> </goals> <configuration> 
+				<tasks> <copy todir="H://WorkSpace//dist"> <fileset dir="${project.build.directory}"> 
+				<include name="*.jar"></include> </fileset> </copy> </tasks> </configuration> 
+				</execution> </executions> </plugin> -->
 		</plugins>
 	</build>
 	<dependencies>
@@ -97,9 +67,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-       		<groupId>com.rabbitmq</groupId>
-        	<artifactId>amqp-client</artifactId>
-       		<version>3.5.1</version>
+			<groupId>com.rabbitmq</groupId>
+			<artifactId>amqp-client</artifactId>
+			<version>3.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
@@ -161,6 +131,11 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-nop</artifactId>
 			<version>1.6.4</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>5.0.0.Alpha2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>

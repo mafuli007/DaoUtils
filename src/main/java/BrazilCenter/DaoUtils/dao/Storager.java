@@ -7,6 +7,7 @@ import java.util.Date;
 import BrazilCenter.DaoUtils.Utils.HibernateUtil;
 import BrazilCenter.DaoUtils.Utils.LogUtils;
 import BrazilCenter.DaoUtils.Utils.Utils;
+import BrazilCenter.DaoUtils.model.FTK_DPS01_IIG_L31_STP;
 import BrazilCenter.DaoUtils.storeDataService.StoreDataService;
 import BrazilCenter.models.FileObj;
 
@@ -19,7 +20,7 @@ import BrazilCenter.models.FileObj;
 public class Storager {
 
 	private String rootDir;
-	
+
 	public String getRootDir() {
 		return rootDir;
 	}
@@ -44,23 +45,41 @@ public class Storager {
 		String fileName = fileNameWithPath.substring(fileNameWithPath.lastIndexOf(File.separator) + 1);
 		String curTime = (new SimpleDateFormat(Utils.dateFormat24)).format(new Date()).toString();
 		String[] infolist = fileName.split("_");
-		String dataTime = infolist[5].substring(0, infolist[5].indexOf('.'));
-		String tableName = infolist[0] + '_' + infolist[1] + '_' + infolist[2] + '_' + infolist[3] + '_' + infolist[4];
+		if (infolist.length == 6) {
+			String dataTime = infolist[5].substring(0, infolist[5].indexOf('.'));
+			String tableName = infolist[0] + '_' + infolist[1] + '_' + infolist[2] + '_' + infolist[3] + '_'
+					+ infolist[4];
 
-		if (HibernateUtil.isTableExist(tableName)) {  
-		} else {  
-			this.createTable(tableName);
-		}
+			if (HibernateUtil.isTableExist(tableName)) {
+			} else {
+				this.createTable(tableName);
+			}
 
-		String updateSql = "";
-		if (HibernateUtil.isFileExist(tableName, fileName)) { 
-			updateSql = " update " + tableName + " set filepath='" + filePath + "', filesize=" + file.length()
-					+ ", datatime='" + dataTime + "', intime='" + curTime + "' where filename ='" + fileName + "'";
-		} else { 
-			updateSql = "insert into " + tableName + " values (" + "'" + fileName + "'," + "'" + filePath + "',"
-					+ file.length() + "," + "'" + dataTime + "'," + "'" + curTime + "')";
+			String updateSql = "";
+			if (HibernateUtil.isFileExist(tableName, fileName)) {
+				updateSql = " update " + tableName + " set filepath='" + filePath + "', filesize=" + file.length()
+						+ ", datatime='" + dataTime + "', intime='" + curTime + "' where filename ='" + fileName + "'";
+			} else {
+				updateSql = "insert into " + tableName + " values (" + "'" + fileName + "'," + "'" + filePath + "',"
+						+ file.length() + "," + "'" + dataTime + "'," + "'" + curTime + "')";
+			}
+			HibernateUtil.update(updateSql);
 		}
-		HibernateUtil.update(updateSql);
+		return false;
+	}
+
+	/***
+	 * 
+	 * @param fileNameWithPath
+	 * @return
+	 */
+	public boolean StoreDataIntoDB(String fileNameWithPath) {
+
+		if (fileNameWithPath.contains("FTK_DPS01_IIG_L31_STP")) {
+
+		} else {
+
+		}
 
 		return false;
 	}

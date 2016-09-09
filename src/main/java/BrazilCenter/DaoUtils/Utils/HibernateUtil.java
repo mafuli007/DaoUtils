@@ -6,6 +6,7 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 
