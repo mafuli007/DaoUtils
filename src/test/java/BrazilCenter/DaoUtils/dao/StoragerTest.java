@@ -15,7 +15,9 @@ public class StoragerTest extends TestCase {
 			FileObj obj = new FileObj();
 			obj.setName("FKT_DPS01_IIG_L31_STP_20150312000000.PNG");
 			obj.setPath("C:"+File.separator + "BrazilTest"+File.separator + "ClientBackData");
-
+			
+			storer.Store(obj, "C:\\BrazilTest\\ClientSourceData\\");
+		
 		
 	}
 }

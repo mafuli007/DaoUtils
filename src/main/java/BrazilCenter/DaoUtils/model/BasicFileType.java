@@ -17,7 +17,7 @@ public class BasicFileType {
 	private String filePath;
 	
 	@Column(name = "filesize")
-	private int fileSize;
+	private long fileSize;
 	
 	@Column(name = "dataTime")
 	private String dataTime;
@@ -27,7 +27,11 @@ public class BasicFileType {
 	private Date inTime;
 
 
-	public BasicFileType(String fileName, String filePath, int fileSize, String dataTime, Date inTime) {
+	public BasicFileType(){
+		
+	}
+	
+	public BasicFileType(String fileName, String filePath, long fileSize, String dataTime, Date inTime) {
 		super();
 		this.fileName = fileName;
 		this.filePath = filePath;
@@ -56,12 +60,12 @@ public class BasicFileType {
 	}
 
 
-	public int getFileSize() {
+	public long getFileSize() {
 		return fileSize;
 	}
 
 
-	public void setFileSize(int fileSize) {
+	public void setFileSize(long fileSize) {
 		this.fileSize = fileSize;
 	}
 
