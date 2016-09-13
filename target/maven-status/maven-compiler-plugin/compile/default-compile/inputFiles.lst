@@ -2,7 +2,6 @@ H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\models\Ft
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\models\FileObj.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\persistence\AbstractHibernateDAOImpl.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\dao\Storager.java
-H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\Process\ClientInterface\IServiceConnect.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\models\Task.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\persistence\impl\I_FKT_DPS01_IIG_L31_STP.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\models\TcpServerObj.java
@@ -16,9 +15,7 @@ H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\persistence\AbstractDAOService.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\persistence\BrazilCenterDAOServiceImpl.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\Tcp\Server\TcpServer.java
-H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\Process\mqClient\RabbitMqProcessClient.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\persistence\BrailCenterDAOService.java
-H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\Process\MqInterface\MqConnector.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\persistence\impl\FKT_DPS01_IIG_L31_STP_IMPL.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\Utils\LogUtils.java
 H:\WorkSpace\BrazilCenter\BrazilCenterUtils\src\main\java\BrazilCenter\DaoUtils\model\FKT_DPS01_IIG_L31_STP.java

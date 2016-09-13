@@ -13,7 +13,6 @@ BrazilCenter\DaoUtils\persistence\AbstractDAOService.class
 BrazilCenter\Tcp\Client\TcpClient.class
 BrazilCenter\Tcp\Client\TcpClient$2.class
 BrazilCenter\DaoUtils\dao\Storager.class
-BrazilCenter\Process\MqInterface\MqConnector.class
 BrazilCenter\models\FileObj.class
 BrazilCenter\Tcp\Server\TcpServer$1.class
 BrazilCenter\DaoUtils\storeDataService\StoreDataService.class
@@ -27,9 +26,7 @@ BrazilCenter\DaoUtils\persistence\AbstractHibernateDAOImpl.class
 BrazilCenter\Tcp\Client\TcpClient$4.class
 BrazilCenter\models\HeartBeatObj.class
 BrazilCenter\Tcp\Client\TcpClient$2$1.class
-BrazilCenter\Process\ClientInterface\IServiceConnect.class
 BrazilCenter\models\Task.class
 BrazilCenter\DaoUtils\persistence\BrailCenterDAOService.class
-BrazilCenter\Process\mqClient\RabbitMqProcessClient.class
 BrazilCenter\Tcp\Client\TcpClient$1.class
 BrazilCenter\models\TcpServerObj.class

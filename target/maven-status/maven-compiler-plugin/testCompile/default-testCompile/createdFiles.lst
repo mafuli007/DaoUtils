@@ -1,5 +1,3 @@
 BrazilCenter\DaoUtils\dao\StoragerTest.class
-BrazilCenter\DaoUtils\AppTest.class
 BrazilCenter\DaoUtils\storeDataService\StoreDataServiceTest.class
-BrazilCenter\Process\mq\QueueConsumer.class
-BrazilCenter\Process\mq\QueueConsumerTest.class
+BrazilCenter\DaoUtils\AppTest.class
