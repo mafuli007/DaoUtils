@@ -9,13 +9,13 @@
 	<!--###################################################-->
 	<!--##########  Hibernate configuration     ###########-->
 	<!--###################################################-->
-<!-- 
+
 	<bean id="hibernateSessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="configLocation">
 			<value>hibernate.cfg.xml</value>
 		</property>
-	</bean> -->
+	</bean> 
 	
      
 	<!--###################################################-->
@@ -23,9 +23,11 @@
 	<!--###################################################-->
 	
 
-<!--     <bean id="FKT_DPS01_IIG_L31_STP_Dao" class="BrazilCenter.DaoUtils.persistence.impl.FKT_DPS01_IIG_L31_STP_IMPL">
+    <bean id="FKT_DPS01_IIG_L31_STP_Dao" class="BrazilCenter.DaoUtils.persistence.impl.FKT_DPS01_IIG_L31_STP_IMPL">
         <property name="sessionFactory" ref="hibernateSessionFactory" />
-    </bean> -->
-   
+    </bean> 
 
+	<bean id="SZT_ISM01_DNP_L01_30M_Dao" class="BrazilCenter.DaoUtils.persistence.impl.SZT_ISM01_DNP_L01_30M_IMPL">
+	        <property name="sessionFactory" ref="hibernateSessionFactory" />
+	</bean>
 </beans>

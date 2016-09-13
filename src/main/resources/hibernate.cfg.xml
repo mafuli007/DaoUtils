@@ -18,6 +18,8 @@
 		<property name="hibernate.c3p0.max_statements">50</property>
 		<property name="hibernate.c3p0.idle_test_period">3000</property>
 
-		<mapping class="BrazilCenter.DaoUtils.model.FKT_DPS01_IIG_L31_STP"></mapping>
+		<mapping class="BrazilCenter.DaoUtils.model.FKT_DPS01_IIG_L31_STP"></mapping>	
+		<mapping class="BrazilCenter.DaoUtils.model.SZT_ISM01_DNP_L01_30M"></mapping>
+		
 	</session-factory>
 </hibernate-configuration>

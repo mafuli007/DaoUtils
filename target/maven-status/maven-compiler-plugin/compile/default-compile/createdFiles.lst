@@ -7,7 +7,6 @@ BrazilCenter\DaoUtils\persistence\BrazilCenterDAOServiceImpl.class
 BrazilCenter\models\RealTaskInfo.class
 BrazilCenter\Tcp\Server\TcpServer.class
 BrazilCenter\DaoUtils\model\FKT_DPS01_IIG_L31_STP.class
-BrazilCenter\DaoUtils\persistence\impl\I_FKT_DPS01_IIG_L31_STP.class
 BrazilCenter\DaoUtils\model\BasicFileType.class
 BrazilCenter\DaoUtils\persistence\AbstractDAOService.class
 BrazilCenter\Tcp\Client\TcpClient.class
@@ -16,9 +15,11 @@ BrazilCenter\DaoUtils\dao\Storager.class
 BrazilCenter\models\FileObj.class
 BrazilCenter\Tcp\Server\TcpServer$1.class
 BrazilCenter\DaoUtils\storeDataService\StoreDataService.class
+BrazilCenter\DaoUtils\persistence\impl\SZT_ISM01_DNP_L01_30M_IMPL.class
 BrazilCenter\models\TASKTYPE.class
 BrazilCenter\Tcp\Server\ServerHandler.class
 BrazilCenter\DaoUtils\persistence\impl\FKT_DPS01_IIG_L31_STP_IMPL.class
+BrazilCenter\DaoUtils\model\SZT_ISM01_DNP_L01_30M.class
 BrazilCenter\DaoUtils\Utils\Utils.class
 BrazilCenter\DaoUtils\persistence\IHibernateDAO.class
 BrazilCenter\HeartBeat\Utils\HeartBeatUtils.class

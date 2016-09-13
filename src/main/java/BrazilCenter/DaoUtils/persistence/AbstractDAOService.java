@@ -40,17 +40,16 @@ public abstract class AbstractDAOService implements IDAOService {
                new String[] {springDaoConfigFile});
       }
    }
-/*
-   *//**
+
+   /**
     * Retrieves sessionFactory bean.
     * @return Session factory spring bean
-    *//*
+    */
    public final SessionFactory getSessionFactory() {
       log.debug("Retrieving Application context with "
             + "appContext.getBean('mySessionFactory')");
       return (SessionFactory) this.appContext
             .getBean("hibernateSessionFactory");
    }
-*/
-
+   
 }

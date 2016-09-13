@@ -1,6 +1,5 @@
 package BrazilCenter.DaoUtils.persistence;
 
-import BrazilCenter.DaoUtils.persistence.impl.I_FKT_DPS01_IIG_L31_STP;
 
 /**
  * Interface to expose all methods for accessing all DAO objects.
@@ -14,6 +13,7 @@ public interface BrailCenterDAOService extends IDAOService {
     * Return IArtifactTypeDAO object (INGESTION schema)
     * @return
     */
-	I_FKT_DPS01_IIG_L31_STP getFTK_DPS01_IIG_L31_STP_DAO();
+	IHibernateDAO getFTK_DPS01_IIG_L31_STP_DAO();
 
+	IHibernateDAO getSZT_ISM01_DNP_L01_30M_DA0();
 }

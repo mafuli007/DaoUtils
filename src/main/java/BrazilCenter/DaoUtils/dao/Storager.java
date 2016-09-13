@@ -7,6 +7,7 @@ import java.util.Date;
 import BrazilCenter.DaoUtils.Utils.LogUtils;
 import BrazilCenter.DaoUtils.Utils.Utils;
 import BrazilCenter.DaoUtils.model.FKT_DPS01_IIG_L31_STP;
+import BrazilCenter.DaoUtils.model.SZT_ISM01_DNP_L01_30M;
 import BrazilCenter.DaoUtils.persistence.BrazilCenterDAOServiceImpl;
 import BrazilCenter.DaoUtils.storeDataService.StoreDataService;
 import BrazilCenter.models.FileObj;
@@ -34,50 +35,19 @@ public class Storager {
 		this.rootDir = rootDir;
 	}
 
-
-	/*public boolean IntoDB(String fileNameWithPath) {
-
-		File file = new File(fileNameWithPath);
-		String filePath = fileNameWithPath.substring(0, fileNameWithPath.lastIndexOf(File.separator));
-		String fileName = fileNameWithPath.substring(fileNameWithPath.lastIndexOf(File.separator) + 1);
-		String curTime = (new SimpleDateFormat(Utils.dateFormat24)).format(new Date()).toString();
-		String[] infolist = fileName.split("_");
-		if (infolist.length == 6) {
-			String dataTime = infolist[5].substring(0, infolist[5].indexOf('.'));
-			String tableName = infolist[0] + '_' + infolist[1] + '_' + infolist[2] + '_' + infolist[3] + '_'
-					+ infolist[4];
-
-			if (HibernateUtil.isTableExist(tableName)) {
-			} else {
-				this.createTable(tableName);
-			}
-
-			String updateSql = "";
-			if (HibernateUtil.isFileExist(tableName, fileName)) {
-				updateSql = " update " + tableName + " set filepath='" + filePath + "', filesize=" + file.length()
-						+ ", datatime='" + dataTime + "', intime='" + curTime + "' where filename ='" + fileName + "'";
-			} else {
-				updateSql = "insert into " + tableName + " values (" + "'" + fileName + "'," + "'" + filePath + "',"
-						+ file.length() + "," + "'" + dataTime + "'," + "'" + curTime + "')";
-			}
-			HibernateUtil.update(updateSql);
-		}
-		return true;
-	}
-*/
 	/** */
-	private boolean StoreIntoDB(String fileNameWithPath) {
+	private boolean StoreIntoDB(String fullName) {
 
-		File file = new File(fileNameWithPath);
-		String filePath = fileNameWithPath.substring(0, fileNameWithPath.lastIndexOf(File.separator));
-		String fileName = fileNameWithPath.substring(fileNameWithPath.lastIndexOf(File.separator) + 1);
+		File file = new File(fullName);
+		String filePath = fullName.substring(0, fullName.lastIndexOf(File.separator));
+		String fileName = fullName.substring(fullName.lastIndexOf(File.separator) + 1);
 		String curTime = (new SimpleDateFormat(Utils.dateFormat24)).format(new Date()).toString();
 		String[] infolist = fileName.split("_");
 		if (infolist.length == 6) {
 			String dataTime = infolist[5].substring(0, infolist[5].indexOf('.'));
 			String tableName = infolist[0] + '_' + infolist[1] + '_' + infolist[2] + '_' + infolist[3] + '_'
 					+ infolist[4];
-			if (fileNameWithPath.contains("FKT_DPS01_IIG_L31_STP")) {
+			if (fullName.contains("FKT_DPS01_IIG_L31_STP")) {
 				FKT_DPS01_IIG_L31_STP obj = new FKT_DPS01_IIG_L31_STP();
 				obj.setFileName(fileName);
 				obj.setFilePath(filePath);
@@ -87,15 +57,25 @@ public class Storager {
 
 				this.BrazilCenterDaoService.getFTK_DPS01_IIG_L31_STP_DAO().insertOrUpdate(obj);
 
+			} else if (fullName.contains("SZT_ISM01_DNP_L01_30M")) {
+				SZT_ISM01_DNP_L01_30M obj = new SZT_ISM01_DNP_L01_30M();
+				obj.setFileName(fileName);
+				obj.setFilePath(filePath);
+				obj.setDataTime(dataTime);
+				obj.setFileSize(file.length());
+				obj.setInTime(new Date());
+				this.BrazilCenterDaoService.getSZT_ISM01_DNP_L01_30M_DA0().insertOrUpdate(obj);
 			} else {
+
 			}
 		}
 		return true;
 	}
 
 	/***
-	 * (1) store the data into the file system
-	 * (2) store the data information into the database
+	 * (1) store the data into the file system (2) store the data information
+	 * into the database
+	 * 
 	 * @param fileobj
 	 * @param rootDir
 	 */
