@@ -2,43 +2,48 @@ package BrazilCenter.models;
 
 import java.util.*;
 
-
 /**
-  * */
+ * tranfser software configuration
+ */
 public class Configuration {
 
- 	private String softwareId;
+	private String softwareId;
 
- 	private int heartbeatInterval;
- 	private int errRecordScanInterval;
+	private int heartbeatInterval;
+	private int errRecordScanInterval;
 
- 	private String MonitorServerIp;
+	private String MonitorServerIp;
 	private int MonitorServerPort;
-	
- 	private List<TcpServerObj> reUploadServers;
-	
- 	private String ReportRootDir;
-	
- 	private String transferSwitch;
-	
- 	private String storeRootDir;
-	
- 	private String ftpMountDirectory;
 
- 	private List<FtpServerAddress> addresslist;
-	
+	private List<TcpServerObj> reUploadServers;
+
+	private String ReportRootDir;
+
+	private String transferSwitch;
+
+	private String storeRootDir;
+
+	private String ftpMountDirectory;
+
+	private List<FtpServerAddress> addresslist;
+
+	/** rabbitmq configuration */
+	private String mqHostIp;
+	private String mqUserName;
+	private String mqUserPasswd;
+
 	/** used to listen the reupload message. */
 	private int ReupLoadServerPort;
 
- 	public Configuration() {
+	public Configuration() {
 		this.addresslist = new LinkedList<FtpServerAddress>();
 		this.transferSwitch = "yes";
 		this.reUploadServers = new LinkedList<TcpServerObj>();
-		
+
 		/** default value. */
 		this.heartbeatInterval = 5;
 		this.errRecordScanInterval = 300;
-		
+
 	}
 
 	public String getTransferSwitch() {
@@ -116,8 +121,8 @@ public class Configuration {
 	public List<TcpServerObj> getReUploadServers() {
 		return reUploadServers;
 	}
-	
-	public void addReuploadServer(TcpServerObj obj){
+
+	public void addReuploadServer(TcpServerObj obj) {
 		this.reUploadServers.add(obj);
 	}
 
@@ -135,5 +140,29 @@ public class Configuration {
 
 	public void setReupLoadServerPort(int reupLoadServerPort) {
 		ReupLoadServerPort = reupLoadServerPort;
+	}
+
+	public String getMqHostIp() {
+		return mqHostIp;
+	}
+
+	public void setMqHostIp(String mqHostIp) {
+		this.mqHostIp = mqHostIp;
+	}
+
+	public String getMqUserName() {
+		return mqUserName;
+	}
+
+	public void setMqUserName(String mqUserName) {
+		this.mqUserName = mqUserName;
+	}
+
+	public String getMqUserPasswd() {
+		return mqUserPasswd;
+	}
+
+	public void setMqUserPasswd(String mqUserPasswd) {
+		this.mqUserPasswd = mqUserPasswd;
 	}
 }

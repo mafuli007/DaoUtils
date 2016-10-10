@@ -1,19 +1,19 @@
-2016-09-14 12:12:41 main org.springframework.context.support.ClassPathXmlApplicationContext INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@22a71081: startup date [Wed Sep 14 12:12:41 CEST 2016]; root of context hierarchy
- 2016-09-14 12:12:42 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO Loading XML bean definitions from class path resource [spring-dao-config.xml]
- 2016-09-14 12:12:42 main org.hibernate.annotations.common.Version INFO HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
- 2016-09-14 12:12:42 main org.hibernate.Version INFO HHH000412: Hibernate Core {4.3.11.Final}
- 2016-09-14 12:12:42 main org.hibernate.cfg.Environment INFO HHH000206: hibernate.properties not found
- 2016-09-14 12:12:42 main org.hibernate.cfg.Environment INFO HHH000021: Bytecode provider name : javassist
- 2016-09-14 12:12:42 main org.hibernate.cfg.Configuration INFO HHH000044: Configuring from URL: file:/H:/WorkSpace/BrazilCenter/BrazilCenterUtils/target/classes/hibernate.cfg.xml
- 2016-09-14 12:12:42 main org.hibernate.internal.util.xml.DTDEntityResolver WARN HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
- 2016-09-14 12:12:42 main org.hibernate.cfg.Configuration INFO HHH000041: Configured SessionFactory: null
- 2016-09-14 12:12:43 main org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator WARN HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
- 2016-09-14 12:12:43 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl WARN HHH000402: Using Hibernate built-in connection pool (not for production use!)
- 2016-09-14 12:12:43 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/brazil_data_center]
- 2016-09-14 12:12:43 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000046: Connection properties: {autoReconnect=true, is-connection-validation-required=true, user=root, password=****, autoReconnectForPools=true}
- 2016-09-14 12:12:43 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000006: Autocommit mode: false
- 2016-09-14 12:12:43 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000115: Hibernate connection pool size: 20 (min=1)
- 2016-09-14 12:12:43 main org.hibernate.dialect.Dialect INFO HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
- 2016-09-14 12:12:43 main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator INFO HHH000399: Using default transaction strategy (direct JDBC transactions)
- 2016-09-14 12:12:43 main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory INFO HHH000397: Using ASTQueryTranslatorFactory
+2016-10-10 16:45:36 main org.springframework.context.support.ClassPathXmlApplicationContext INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@22a71081: startup date [Mon Oct 10 16:45:36 CEST 2016]; root of context hierarchy
+ 2016-10-10 16:45:36 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader INFO Loading XML bean definitions from class path resource [spring-dao-config.xml]
+ 2016-10-10 16:45:37 main org.hibernate.annotations.common.Version INFO HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+ 2016-10-10 16:45:37 main org.hibernate.Version INFO HHH000412: Hibernate Core {4.3.11.Final}
+ 2016-10-10 16:45:37 main org.hibernate.cfg.Environment INFO HHH000206: hibernate.properties not found
+ 2016-10-10 16:45:37 main org.hibernate.cfg.Environment INFO HHH000021: Bytecode provider name : javassist
+ 2016-10-10 16:45:37 main org.hibernate.cfg.Configuration INFO HHH000044: Configuring from URL: file:/H:/WorkSpace/BrazilCenter/BrazilCenterUtils/target/classes/hibernate.cfg.xml
+ 2016-10-10 16:45:37 main org.hibernate.internal.util.xml.DTDEntityResolver WARN HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+ 2016-10-10 16:45:37 main org.hibernate.cfg.Configuration INFO HHH000041: Configured SessionFactory: null
+ 2016-10-10 16:45:38 main org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator WARN HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+ 2016-10-10 16:45:38 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl WARN HHH000402: Using Hibernate built-in connection pool (not for production use!)
+ 2016-10-10 16:45:38 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.0.0.1:3306/brazil_data_center]
+ 2016-10-10 16:45:38 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000046: Connection properties: {autoReconnect=true, is-connection-validation-required=true, user=root, password=****, autoReconnectForPools=true}
+ 2016-10-10 16:45:38 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000006: Autocommit mode: false
+ 2016-10-10 16:45:38 main org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl INFO HHH000115: Hibernate connection pool size: 20 (min=1)
+ 2016-10-10 16:45:38 main org.hibernate.dialect.Dialect INFO HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+ 2016-10-10 16:45:38 main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator INFO HHH000399: Using default transaction strategy (direct JDBC transactions)
+ 2016-10-10 16:45:38 main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory INFO HHH000397: Using ASTQueryTranslatorFactory
  
