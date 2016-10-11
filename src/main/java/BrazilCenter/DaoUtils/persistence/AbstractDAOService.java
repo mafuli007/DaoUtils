@@ -27,8 +27,7 @@ public abstract class AbstractDAOService implements IDAOService {
     * @param springDaoConfigFile Input spring dao config file.
     */
    public AbstractDAOService(final String springDaoConfigFile) {
-      log.debug("Starting DAO Application Context...");
-      if (springDaoConfigFile == null) {
+       if (springDaoConfigFile == null) {
          log.fatal("Spring DAO file cannot be null. "
                + "It must be set before getting an instance "
                + "of the DAOServiceManager");
